@@ -2,6 +2,8 @@ import os
 from pathlib import Path
 import logging
 
+# This script will create thr project structure i.e. all the required files and directories automatically. 
+# We can also change the project structure or can add new filesand directories
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
@@ -30,7 +32,7 @@ list_of_files = [
     f"{project_name}/entity/artifact_entity.py",
     f"{project_name}/entity/config_entity.py",
 
-    f"{project_name}/exception/_init__.py",
+    f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
 
     f"{project_name}/pipeline/__init__.py",
