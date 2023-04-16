@@ -26,7 +26,7 @@ list_of_files = [
 
     f"{project_name}/constant/__init__.py",
     f"{project_name}/constant/training_pipeline/__init__.py",
-    f"{project_name}/constant/training_pipeline/application.py",
+    f"{project_name}/constant/application.py",
 
     f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/artifact_entity.py",
