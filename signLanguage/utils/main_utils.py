@@ -33,15 +33,13 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) ->No
         raise SignException(e, sys)
     
 
-def decodeImage(imgstring, filename: str):
+def decodeImage(imgstring, fileName):
     imgdata = base64.b64decode(imgstring)
-    with open("./data/" + filename, 'wb') as f:
+    with open("./data/" + fileName, 'wb') as f:
         f.write(imgdata)
         f.close()
 
 
-def encodeImage(cropped_img_path: str):
-    with open(cropped_img_path, 'rb') as f:
-        imgdata = f.read()
-        imgstring = base64.b64encode(imgdata)
-        return imgstring
+def encodeImageIntoBase64(croppedImagePath):
+    with open(croppedImagePath, "rb") as f:
+        return base64.b64encode(f.read())
