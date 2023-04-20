@@ -100,6 +100,12 @@ to upload an image and get results with the prediction score.
 	sudo usermod -aG docker ubuntu
 
 	newgrp docker
+
+    to check and verify the docker installation use the following command
+
+    ```
+    docker --version
+    ```
 	
 # 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
