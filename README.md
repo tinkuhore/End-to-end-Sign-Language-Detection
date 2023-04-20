@@ -113,4 +113,6 @@ to upload an image and get results with the prediction score.
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 284644521468.dkr.ecr.us-east-1.amazonaws.com
+
+    ECR_REPOSITORY_NAME = sign-lang
