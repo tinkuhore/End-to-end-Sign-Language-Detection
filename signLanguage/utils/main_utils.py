@@ -7,13 +7,14 @@ from signLanguage.exception import SignException
 from signLanguage.logger import logging
 
 
-def read_yaml_file(file_path: str) ->dict:
+def read_yaml_file(file_path: str) -> dict:
     try:
-        with open(file_path, 'rb') as stream:
-            logging.info("Reading yaml file")
-            return yaml.load(stream)
+        with open(file_path, "rb") as yaml_file:
+            logging.info("Read yaml file successfully")
+            return yaml.safe_load(yaml_file)
+
     except Exception as e:
-        raise SignException(e, sys)
+        raise SignException(e, sys) from e
     
 
 def write_yaml_file(file_path: str, content: object, replace: bool = False) ->None:
